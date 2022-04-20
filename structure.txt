@@ -1,12 +1,17 @@
 
 ===================================================
-Header
+=======.Header
+ position: absolute
+ left: 0
+ widht: 100%
+ z-index: 2
 =======.container
  display: flex
  justify-content: space-between
  aligne-items: center
  position: relative
-=======.container::after
+ min-height: 97px             for small screens
+=======.container::after      for line under Header
  content: ""
  position: absolute
  height: 1px
@@ -15,13 +20,42 @@ Header
  widht: calc(100%-30px)
  left: 15px
    =======.logo img
-    height: 40px
+    height: 40px           the width is organized automatically
    ======= nav
-    flex: 1
-        ======= ul
-            ======= li
-                ======= li .active
-        ======= .form
+    flex: 1                flex :1 is for to take the rest of the parent's size
+    display: flex
+    align-items: center
+    justify-content:flex-end
+         ======= ul
+          display:flex
+            ======= li a
+             display:block
+             color: white
+             text-decoration: none
+             font-size: 14px
+             transition : 0.3s
+             padding: 40px 10px
+             position: relative        used for z-index
+             z-index: 2
+               ======= li a.active
+                color:var(--main.color)
+               ======= li a.active:hover
+                color:var(--main.color)
+                border-bottom: 1px solid var(--main-color)
+         ======= .form
+          widht: 40px
+          height: 30px
+          position: relative
+          margin-left: 30px
+          border-left: 10px solid white
+            ======= .i
+             color: white
+             position: absolute
+             font-size: 20px
+             top: 50%
+             transform: translateY(-50%)
+             right : 0
+             
 ===================================================
 Landing
 =======.Landing 
