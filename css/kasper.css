@@ -1,83 +1,93 @@
 /* Variables ================================================================================= */
 :root{
     --main-color : #19c8fa;
-    --p-color: #777;
-    --secondary-color: #2c4755;
-    --section-padding : 60px;
-    --section-background : #f6f6f6;
-    }
-    /* Global Rules ============================================================================== */
-    *{
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-    }
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        font-family: "Open Sans", sans-serif;
-    }
-    ul{
-        list-style: none;
-    }
-    .container{
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    /* Small screen ============================================================================== */
-    @media (min-width: 768px) {
-        .container{
-            width: 750px
-        }
-    }
-    /* midium screen ============================================================================= */
-    @media (min-width:992px) {
-        .container{
-            width: 970px
-        }
-    }
-    /* Large screen ============================================================================== */
-    @media (min-width: 1200px) {
-        .container{
-            width: 1170px
-        }
-    }
-    /*====================================================================================================================================================================== */
-    /* header ==================================================================================== */
-    
-    @media (max-width: 767px) {
-        header nav ul{
-             display: none;          /*this is for small screens */
-        }
-        header nav .toggle-menu:hover + ul{
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 100px;
-            left: 0;
-            width: 100%;
-            background-color: rgb(0 0 0/50%);
-        }
-        header nav ul li a{
-            padding: 15px !important;
-        }
-    }
+    --transparent-color: rgb(15 116 143 / 70%)
 
-    /* Landing Section =========================================================================== */
-    
-    /* Features ================================================================================== */
-    
-    /* Services ================================================================================== */
-    
-    /* Portfolio ================================================================================= */
-    
-    /* About Us ================================================================================== */
-    
-    /* Contact =================================================================================== */
-    
-    /* Footer ==================================================================================== */
+}
+/* Global Rules ============================================================================== */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small screen ============================================================================== */
+@media (min-width: 768px) {
+    .container{
+        width: 750px
+    }
+}
+/* midium screen ============================================================================= */
+@media (min-width:992px) {
+    .container{
+        width: 970px
+    }
+}
+/* Large screen ============================================================================== */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px
+    }
+}
+/*====================================================================================================================================================================== */
+/* header ==================================================================================== */
+
+@media (max-width: 767px) {
+    header nav ul{
+        display: none;          /*this is for small screens */
+    }
+    header nav .toggle-menu:hover + ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0 0 0/50%);
+    }
+    header nav ul li a{
+        padding: 15px !important;
+    }
+}
+
+/* Landing Section =========================================================================== */
+@media (max-width: 767px) {
+    .landing .text{
+        width: 100%;
+    }
+    .landing .text .content{
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .landing .change-background{
+        display: none;
+    }
+}
+/* Features ================================================================================== */
+
+/* Services ================================================================================== */
+
+/* Portfolio ================================================================================= */
+
+/* About Us ================================================================================== */
+
+/* Contact =================================================================================== */
+
+/* Footer ==================================================================================== */
