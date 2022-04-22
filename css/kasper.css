@@ -1,8 +1,8 @@
 /* Variables ================================================================================= */
 :root{
     --main-color : #19c8fa;
-    --transparent-color: rgb(15 116 143 / 70%)
-
+    --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px;
 }
 /* Global Rules ============================================================================== */
 *{
@@ -26,6 +26,47 @@ ul{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+/* Components ============================================================================== */
+.main-heading{
+    text-align: center;
+}
+.main-heading h2{
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+
+}
+.main-heading h2::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+}
+.main-heading h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -38px;
+    background-color: white;
+}
+.main-heading p{
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
 }
 /* Small screen ============================================================================== */
 @media (min-width: 768px) {
@@ -65,7 +106,6 @@ ul{
         padding: 15px !important;
     }
 }
-
 /* Landing Section =========================================================================== */
 @media (max-width: 767px) {
     .landing .text{
@@ -80,10 +120,32 @@ ul{
         display: none;
     }
 }
-/* Features ================================================================================== */
-
 /* Services ================================================================================== */
-
+@media (min-width: 768px) {
+    .services .services-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
+@media (max-width: 767px) {
+    .services .srv-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .services .srv-box i{
+        margin: 0 0 30px;
+    }
+}
+/* Design ================================================================================= */
+@media (max-width: 767px) {
+    .design .image{
+        display: none;          /*this is for small screens */
+    }
+}
 /* Portfolio ================================================================================= */
 
 /* About Us ================================================================================== */
