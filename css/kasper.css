@@ -147,6 +147,16 @@ ul{
     }
 }
 /* Portfolio ================================================================================= */
+@media (min-width: 768px) {
+    .portfolio .img-container .box {
+        flex-basis: 50%;
+    }
+}
+@media (min-width: 1199px) {
+    .portfolio .img-container .box {
+        flex-basis: 25%;
+    }
+}
 
 /* About Us ================================================================================== */
 
