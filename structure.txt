@@ -369,7 +369,7 @@
     flex-wrap: wrap
    =======.container > div     (@media (min-widht:992px))
     flex-basis: 45%
-         =======.testimonials
+        =======.testimonials
                =======.container > div > h3
                 margin: 0 0 30px
                 font-weight: normal
@@ -419,7 +419,7 @@
                            ======= li active  
                             background-color: var(--main-color)             
                             border-color: var(--main-color)
-         =======.skills
+        =======.skills
                ======= h3
                  (alredy stiling)
                ======= p
@@ -458,6 +458,252 @@
                             right: -8px
                             top: -15px
 ===================================================
-=======.our skills
-                           
+=======.quote
+ padding-top: var(--Section-padding)
+ padding-bottom: var(--Section-padding)
+ background-image: url("../images/quote.jpg")
+ background-size: cover
+ position: relative
+ text-align: center
+ color: white
+=======.quote::before
+ content:""
+ position: absolute
+ left:0
+ top:0
+ widht:100%
+ height:100%
+ background-color: rgb(0 0 0 / 75%)
+    =======.container
+     position: relative
+        =======.q
+         font-size: 30px
+         margin-bottom: 20px
+         display: block
+===================================================
+=======.Pricing
+ padding-top: var(--Section-padding)
+ padding-bottom: var(--Section-padding)
+  =======.container
+      =======.main-heading
+       (alredy stiling)
+      =======.plans
+       display:grid
+       grid-template-column: repeat(auto-fill, minmax(250px, 1fr))
+       gap: 30px
+          =======.plan    (x3)
+           background-color: #fcfcfc
+           text-align: center
+              =======.head
+               padding: 40px 20px
+               border-top: 1px solid var(--main-color)
+               border-bottom: 1px solid var(--main-color)               
+                  ======= h3
+                   font-weight: normal
+                   margin-bottom: 20px
+                   text-transform: uppercase
+                  ======= span
+                   font-size: 60px
+                   font-weight: bold
+                   /*position: relative
+                  ======= span::before
+                   content:"$"
+                   font-size: 25px
+                   position: relative
+                   top: -40px
+                   margin-right: 15px
+                   font-weight: normal
+                  ======= span::after
+                   content:"/Mo"
+                   font-size: 20px
+                   position: relative
+                   right:-15px
+              ======= ul
+               border-bottom: 1px solid var(--main-color)
+                  ======= li
+                   padding:20px
+                  ======= li:not(:last-child)
+                   position: relative
+                  ======= li:not(:last-child)::after
+                   content:""
+                   position: absolute
+                   left:50%
+                   transform: translateX(-50%)
+                   width:120px
+                   height: 1px
+                   background-color: var(--main-color)
+                   bottom: 0
+              =======.foot
+                  =======.a
+                   display: block
+                   padding:20px 20px
+                   text-decoration: none
+                   border: 1px solid var(--main-color)
+                   widht: fit-content
+                   margin: 30px auto
+      =======.contact-text
+       text-align: center
+       margin: 50px auto 20px
+       font-size: 20px
+      =======.contact-link
+       display: block
+       width: fit-content
+       margin: 20px auto
+       background-color: var(--main-color)
+       color:white
+       padding:15px 30px
+       text-decoration: none
+===================================================
+=======.Subscribe
+ padding-top: var(--Section-padding)
+ padding-bottom: var(--Section-padding)
+ background-image: url("../images/quote.jpg")
+ background-size: cover
+ position:relative
+ color: white
+=======.Subscribe::before
+ content:""
+ position: absolute
+ left:0
+ top:0
+ width:100%
+ height: 100%
+ background-color: rgb(0 0 0 / 50%)
+  =======.container
+   position:relative
+   display:flex
+   align-items: center
+  =======.container                  (@media (max-widht:991px))
+   flex-direction: column
+      ======= form
+       display:flex
+       position:relative
+       widht:500px
+       max-widht: 100%
+      ======= form::placeholder
+       color: white
+          ======= i
+           position:absolute
+           top:50%
+           transform: translateY(-50%)
+           left: 25px
+          ======= input[type="email"]
+           border: 1px solid white
+           border-right: none
+           background: none
+           padding: 20px 20px 20px 60px
+           caret-color: var(--main-color)
+           widht: calc(100% - 130px)
+          ======= input[type="email"]:focus
+           outline : none
+          ======= input[type="submit"]
+           widht: 130px
+           background-color:var(--main-color)
+           color: white
+           padding: 10px 20px
+           border: 1px solid white
+           border-left: none
+           text-transform: uppercase
+          ======= input[type="submit"]:focus
+           outline : none
+      ======= p
+       line-height:2
+       margin-left: 50px
+      ======= p                 (@media (max-widht:991px))
+       margin: 30px 0 0
+===================================================
+=======.Contact
+ padding-top: var(--Section-padding)
+ padding-bottom: var(--Section-padding)
+  =======.container
+      =======.main-heading
+       (alredy stiling)
+      =======.content
+       display:flex
+       justify-content: space-between
+      =======.content                 (@media (max-widht:767px))
+       flex-direction: column
+          =======.form
+           flex-basis: 70%
+              =======.main-input
+               padding:20px
+               display: block
+               border: 1px solid #ccc
+               margin-bottom: 30px
+               widht: 100%
+              =======.main-input:focus
+               outline:none
+                    ======= input[type="text"]
+                    ======= input[type="email"]
+                    ======= input[textarea]
+                     height:200px
+              ======= input[type="submit"]
+               background-color: var(--main-color)
+               color:white
+               padding:20px
+               border:none
+               display:flex
+               margin-left:  auto
+               text-transform: uppercase
+               cursor: pointer
+          =======.info
+           flex-basis: 25%
+          =======.info                 (@media (max-widht:767px))
+           order: -1
+           text-align :center
+              ======= h4
+               text-transform: uppercase
+               margin-bottom:30px
+               font-weight:500
+               font-size:18px
+              =======.phone   (x2)
+               display:block
+               color:#777
+               margin-bottom:10px
+              ======= h4:nth-of-type(2)
+               margin-top: 90px
+              ======= h4:nth-of-type(2)             (@media (max-widht:767px))
+               margin-top: 30px
+              ======= address
+               color: #777
+               line-height: 2
+              ======= address                      (@media (max-widht:767px))
+               margin-bottom: 30px
+===================================================
+=======.footer
+ padding-top: calc(var(--Section-padding)/2)
+ padding-bottom: calc(var(--Section-padding)/2)
+ background-image: url("../images/quote.jpg")
+ background-size: cover
+ position:relative
+ color: white
+ text-align: center
+=======.footer::before
+ content:""
+ position:absolute
+ left:0
+ top:0
+ widht: 100%
+ height: 100%
+ background-color: rgb( 0 0 0 / 70%)
+  =======.container
+   position: relative
+        ======= img
+         margin-bottom: 20px
+        ======= p:not(.copyright)
+         text-transform: uppercase
+         padding: 20px
+         border-bottom: 1px solid white
+         font-size: 22px
+         widht: fit-content
+         margin: 20px auto
+        =======.social-icons
+              =======.i
+               padding: 10px 15px
+        ======= p.copyright
+         margin-top: 60px
+            ======= p.copyright span
+             font-weight: bold
+             color: var(--main-color)
+
 
